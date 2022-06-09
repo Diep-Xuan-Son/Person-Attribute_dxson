@@ -1,0 +1,129 @@
+import json
+attribute= {}
+attribute['0'] = 'gender'
+attribute['1'] = 'young'
+attribute['2'] = 'teenager'
+attribute['3'] = 'adult'
+attribute['4'] = 'old'
+attribute['5'] = 'backpack'
+attribute['6'] = 'bag'
+attribute['8'] = 'hair' # 0: short hair, 1: long hair
+attribute['9'] = 'hat'
+attribute['10'] = 'boots'
+attribute['11'] = 'glasses'
+attribute['12'] = 'clothes'# normal or dress
+attribute['13'] = 'up'
+attribute['14'] = 'upblue'
+attribute['15'] = 'upblack'
+attribute['16'] = 'upbrown'
+attribute['17'] = 'upgray'
+attribute['18'] = 'upgeen'
+attribute['19'] = 'uppurple'
+attribute['20'] = 'upred'
+attribute['21'] = 'upwhite'
+attribute['22'] = 'upyellow'
+attribute['23'] = 'uppink'
+attribute['24'] = 'down'
+attribute['25'] = 'downblue'
+attribute['26'] = 'downblack'
+attribute['27'] = 'downbrown'
+attribute['28'] = 'downgray'
+attribute['29'] = 'downgreen'
+attribute['30'] = 'downpurple'
+attribute['31'] = 'downred'
+attribute['32'] = 'downwhite'
+attribute['33'] = 'downyellow'
+attribute['34'] = 'downpink'
+attribute['35'] = 'dressblue'
+attribute['36'] = 'dressblack'
+attribute['37'] = 'dressbrown'
+attribute['38'] = 'dressgray'
+attribute['39'] = 'dressgreen'
+attribute['40'] = 'dresspurple'
+attribute['41'] = 'dressred'
+attribute['42'] = 'dresswhite'
+attribute['43'] = 'dressyellow'
+attribute['44'] = 'dresspink'
+attribute['45'] = 'bootblue'
+attribute['46'] = 'bootblack'
+attribute['47'] = 'bootbrown'
+attribute['48'] = 'bootgray'
+attribute['49'] = 'bootgreen'
+attribute['50'] = 'bootpurple'
+attribute['51'] = 'bootred'
+attribute['52'] = 'bootwhite'
+attribute['53'] = 'bootyellow'
+attribute['54'] = 'bootpink'
+with open('./doc/label.json', 'r') as file:
+	data = json.load(file)
+for i in data:
+	globals()[i] = data[i]
+att = list(attribute.values())
+non_duke = []
+non_market = []
+for i in att:
+	if i not in duke:
+		non_duke.append(i)
+for i in att:
+	if i not in market:
+		non_market.append(i)
+print(non_market)
+detail = {}
+detail['gender'] = ['Giới tính',['Nam','Nữ']]
+detail['young'] = ['Độ tuổi', [True, False]]
+detail['teenager'] = ['Độ tuổi', [True, False]]
+detail['adult'] = ['Độ tuổi', [True, False]]
+detail['old'] = ['Độ tuổi', [True, False]]
+detail['backpack'] = ['Balo', [True, False]] 
+detail['bag'] = ['Túi', [True, False]] 
+detail['hair'] = ['Tóc', ['Ngắn', 'Dài']] 
+detail['hat'] = ['Mũ', [True, False]] 
+detail['boots'] = ['Giày', [True, False]]
+detail['glasses'] = ['Kính', [True, False]] 
+detail['clothes'] = ['Quần áo', ['Bình thường', 'Váy']]
+detail['up'] = ['Áo', [True, False]] 
+detail['upred'] = ['Áo đỏ', [True, False]]
+detail['upblue'] = ['Áo xanh dương', [True, False]]
+detail['upgeen'] = ['Áo xanh lá', [True, False]]
+detail['upgray'] = ['Áo xám', [True, False]]
+detail['uppink'] = ['Áo hồng', [True, False]]
+detail['upblack'] = ['Áo đen', [True, False]]
+detail['upbrown'] = ['Áo nâu', [True, False]]
+detail['upwhite'] = ['Áo trắng', [True, False]]
+detail['upyellow'] = ['Áo vàng', [True, False]]
+detail['uppurple'] = ['Áo tím', [True, False]]
+detail['down'] = ['Quần', [True, False]] 
+detail['downred'] = ['Quần đỏ', [True, False]]
+detail['downblue'] = ['Quần xanh dương', [True, False]]
+detail['downgeen'] = ['Quần xanh lá', [True, False]]
+detail['downgray'] = ['Quần xám', [True, False]]
+detail['downpink'] = ['Quần hồng', [True, False]]
+detail['downblack'] = ['Quần đen', [True, False]]
+detail['downbrown'] = ['Quần nâu', [True, False]]
+detail['downwhite'] = ['Quần trắng', [True, False]]
+detail['downyellow'] = ['Quần vàng', [True, False]]
+detail['downpurple'] = ['Quần tím', [True, False]] 
+detail['dressred'] = ['váy đỏ', [True, False]]
+detail['dressblue'] = ['váy xanh dương', [True, False]]
+detail['dressgeen'] = ['váy xanh lá', [True, False]]
+detail['dressgray'] = ['váy xám', [True, False]]
+detail['dresspink'] = ['váy hồng', [True, False]]
+detail['dressblack'] = ['váy đen', [True, False]]
+detail['dressbrown'] = ['váy nâu', [True, False]]
+detail['dresswhite'] = ['váy trắng', [True, False]]
+detail['dressyellow'] = ['váy vàng', [True, False]]
+detail['dresspurple'] = ['váy tím', [True, False]]
+detail['bootred'] = ['Giày đỏ', [True, False]]
+detail['bootblue'] = ['Giày xanh dương', [True, False]]
+detail['bootgeen'] = ['Giày xanh lá', [True, False]]
+detail['bootgray'] = ['Giày xám', [True, False]]
+detail['bootpink'] = ['Giày hồng', [True, False]]
+detail['bootblack'] = ['Giày đen', [True, False]]
+detail['bootbrown'] = ['Giày nâu', [True, False]]
+detail['bootwhite'] = ['Giày trắng', [True, False]]
+detail['bootyellow'] = ['Giày vàng', [True, False]]
+detail['bootpurple'] = ['Giày tím', [True, False]]
+data_save = {'attribute':attribute, 'detail':detail}
+with open('./doc/my_label.json', 'w', encoding = 'utf-8') as f:
+	text = json.dumps(data_save, indent=4, ensure_ascii=False)
+	f.write(text)

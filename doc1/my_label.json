@@ -1,0 +1,427 @@
+{
+    "attribute": {
+        "0": "gender",
+        "1": "young",
+        "3": "adult",
+        "4": "old",
+        "5": "backpack",
+        "6": "bag",
+        "8": "hair",
+        "9": "hat",
+        "10": "boots",
+        "11": "glasses",
+        "12": "clothes",
+        "13": "up",
+        "14": "upblue",
+        "15": "upblack",
+        "16": "upbrown",
+        "17": "upgray",
+        "18": "upgreen",
+        "19": "uppurple",
+        "20": "upred",
+        "21": "upwhite",
+        "22": "upyellow",
+        "23": "uppink",
+        "24": "down",
+        "25": "downblue",
+        "26": "downblack",
+        "27": "downbrown",
+        "28": "downgray",
+        "29": "downgreen",
+        "30": "downpurple",
+        "31": "downred",
+        "32": "downwhite",
+        "33": "downyellow",
+        "34": "downpink",
+        "35": "dessblue",
+        "36": "desstblack",
+        "37": "dessbrown",
+        "38": "dessgray",
+        "39": "dessgreen",
+        "40": "desspurple",
+        "41": "dessred",
+        "42": "desswhite",
+        "43": "dessyellow",
+        "44": "desspink"
+    },
+    "detail": {
+        "gender": [
+            "Giới tính",
+            [
+                "Nam",
+                "Nữ"
+            ]
+        ],
+        "young": [
+            "Độ tuổi",
+            [
+                true,
+                false
+            ]
+        ],
+        "teenager": [
+            "Độ tuổi",
+            [
+                true,
+                false
+            ]
+        ],
+        "adult": [
+            "Độ tuổi",
+            [
+                true,
+                false
+            ]
+        ],
+        "old": [
+            "Độ tuổi",
+            [
+                true,
+                false
+            ]
+        ],
+        "backpack": [
+            "Balo",
+            [
+                true,
+                false
+            ]
+        ],
+        "bag": [
+            "Túi",
+            [
+                true,
+                false
+            ]
+        ],
+        "hair": [
+            "Tóc",
+            [
+                "Ngắn",
+                "Dài"
+            ]
+        ],
+        "hat": [
+            "Mũ",
+            [
+                true,
+                false
+            ]
+        ],
+        "boots": [
+            "Giày",
+            [
+                true,
+                false
+            ]
+        ],
+        "glasses": [
+            "Kính",
+            [
+                true,
+                false
+            ]
+        ],
+        "clothes": [
+            "Quần áo",
+            [
+                "Bình thường",
+                "Váy"
+            ]
+        ],
+        "up": [
+            "Áo",
+            [
+                true,
+                false
+            ]
+        ],
+        "upred": [
+            "Áo đỏ",
+            [
+                true,
+                false
+            ]
+        ],
+        "upblue": [
+            "Áo xanh dương",
+            [
+                true,
+                false
+            ]
+        ],
+        "upgeen": [
+            "Áo xanh lá",
+            [
+                true,
+                false
+            ]
+        ],
+        "upgray": [
+            "Áo xám",
+            [
+                true,
+                false
+            ]
+        ],
+        "uppink": [
+            "Áo hồng",
+            [
+                true,
+                false
+            ]
+        ],
+        "upblack": [
+            "Áo đen",
+            [
+                true,
+                false
+            ]
+        ],
+        "upbrown": [
+            "Áo nâu",
+            [
+                true,
+                false
+            ]
+        ],
+        "upwhite": [
+            "Áo trắng",
+            [
+                true,
+                false
+            ]
+        ],
+        "upyellow": [
+            "Áo vàng",
+            [
+                true,
+                false
+            ]
+        ],
+        "uppurple": [
+            "Áo tím",
+            [
+                true,
+                false
+            ]
+        ],
+        "down": [
+            "Quần",
+            [
+                true,
+                false
+            ]
+        ],
+        "downred": [
+            "Quần đỏ",
+            [
+                true,
+                false
+            ]
+        ],
+        "downblue": [
+            "Quần xanh dương",
+            [
+                true,
+                false
+            ]
+        ],
+        "downgeen": [
+            "Quần xanh lá",
+            [
+                true,
+                false
+            ]
+        ],
+        "downgray": [
+            "Quần xám",
+            [
+                true,
+                false
+            ]
+        ],
+        "downpink": [
+            "Quần hồng",
+            [
+                true,
+                false
+            ]
+        ],
+        "downblack": [
+            "Quần đen",
+            [
+                true,
+                false
+            ]
+        ],
+        "downbrown": [
+            "Quần nâu",
+            [
+                true,
+                false
+            ]
+        ],
+        "downwhite": [
+            "Quần trắng",
+            [
+                true,
+                false
+            ]
+        ],
+        "downyellow": [
+            "Quần vàng",
+            [
+                true,
+                false
+            ]
+        ],
+        "downpurple": [
+            "Quần tím",
+            [
+                true,
+                false
+            ]
+        ],
+        "dressred": [
+            "váy đỏ",
+            [
+                true,
+                false
+            ]
+        ],
+        "dressblue": [
+            "váy xanh dương",
+            [
+                true,
+                false
+            ]
+        ],
+        "dressgeen": [
+            "váy xanh lá",
+            [
+                true,
+                false
+            ]
+        ],
+        "dressgray": [
+            "váy xám",
+            [
+                true,
+                false
+            ]
+        ],
+        "dresspink": [
+            "váy hồng",
+            [
+                true,
+                false
+            ]
+        ],
+        "dressblack": [
+            "váy đen",
+            [
+                true,
+                false
+            ]
+        ],
+        "dressbrown": [
+            "váy nâu",
+            [
+                true,
+                false
+            ]
+        ],
+        "dresswhite": [
+            "váy trắng",
+            [
+                true,
+                false
+            ]
+        ],
+        "dressyellow": [
+            "váy vàng",
+            [
+                true,
+                false
+            ]
+        ],
+        "dresspurple": [
+            "váy tím",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootred": [
+            "Giày đỏ",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootblue": [
+            "Giày xanh dương",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootgeen": [
+            "Giày xanh lá",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootgray": [
+            "Giày xám",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootpink": [
+            "Giày hồng",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootblack": [
+            "Giày đen",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootbrown": [
+            "Giày nâu",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootwhite": [
+            "Giày trắng",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootyellow": [
+            "Giày vàng",
+            [
+                true,
+                false
+            ]
+        ],
+        "bootpurple": [
+            "Giày tím",
+            [
+                true,
+                false
+            ]
+        ]
+    }
+}
